@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import 'colors';
+@import 'typography';
+@import 'breakpoint';
+
+body {
+    background-color: $color-primary-background;
+    font-family: $font-inter-family;
+    font-size: $font-body-size;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+p {
+    font-family: $font-lexend-family;
+    font-weight: $font-lexend-weight;
+}
+
+p, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $color-card-background;
+        margin: 20px;
+        max-width: 1000px;
+        max-height: 415px;
+        overflow: hidden;
+        margin: 20px;
+        border-radius: 10px;
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 445px;
+            padding: 0 20px;
+            flex: 1;
+
+            .main-heading {
+                padding: 0 100px 0 30px;
+
+                h1 {
+                    font-family: $font-inter-family;
+                    span {
+                        color: $color-accent;
+                    }
+                }
+
+                p {
+                    line-height: 150%;
+                    word-spacing: 20%;
+                }
+            }
+
+            .stat-headings {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 30px;
+                padding: 0 100px 0 30px;
+
+                .stat {
+                    h2 {
+                        font-weight: nth($font-inter-weights, 2 );
+                    }
+
+                    p {
+                        text-transform: uppercase;
+                        font-size: 0.7rem;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+
+        .card-image {
+            background-color: $color-accent;
+            flex: 1;
+
+            .image {
+                background-image: url('/images/image-header-desktop.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;   
+                height: 445px;
+                mix-blend-mode: multiply;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+    span {
+        color: #f5a7e4;
+        text-align: center;
+
+        a {
+            color: #f5a7e4;
+        }
+    }
+}
+
+@media only screen and (max-width: $layout-breakpoint-medium) {
+    main {
+        .card {
+            flex-direction: column-reverse;
+            align-items: unset;
+            max-height: unset;
+
+            .card-content {
+                padding: 60px;
+                align-items: center;
+                gap: 30px;
+
+                .main-heading {
+                    padding: unset;
+                    text-align: center;
+                }
+
+                .stat-headings {
+                    padding: unset;
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+
+            .card-image .image {
+                height: 300px;
+            }
+        }
+    }
+}

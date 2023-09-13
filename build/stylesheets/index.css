@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+  background-color: hsl(233deg 47% 7%);
+  font-family: Inter, sans-serif;
+  font-size: 0.9375em;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+
+p,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: hsl(244deg 38% 16%);
+  margin: 20px;
+  max-width: 1000px;
+  max-height: 415px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+main .card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 445px;
+  padding: 0 20px;
+  flex: 1;
+}
+
+main .card .card-content .main-heading {
+  padding: 0 100px 0 30px;
+}
+
+main .card .card-content .main-heading h1 {
+  font-family: Inter, sans-serif;
+}
+
+footer span {
+  color: #f5a7e4;
+  text-align: center;
+}
+
+footer span a {
+  color: #f5a7e4;
+}
+
+main .card .card-content .main-heading h1 span {
+  color: hsl(277deg 64% 61%);
+}
+
+main .card .card-content .main-heading p {
+  line-height: 150%;
+  word-spacing: 20%;
+}
+
+main .card .card-content .stat-headings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0 100px 0 30px;
+}
+
+main .card .card-content .stat-headings .stat h2 {
+  font-weight: 700;
+}
+
+main .card .card-content .stat-headings .stat p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+main .card .card-image {  
+  background-color: hsl(277deg 64% 61%);
+  flex: 1;
+}
+
+main .card .card-image .image {
+  background-image: url('/images/image-header-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 445px;
+  mix-blend-mode: multiply;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+@media (width <=700px) {
+  main .card {
+    flex-direction: column-reverse;
+    align-items: unset;
+    max-height: unset;
+  }
+
+  main .card .card-content {
+    padding: 60px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  main .card .card-content .main-heading {
+    padding: unset;
+    text-align: center;
+  }
+
+  main .card .card-content .stat-headings {
+    padding: unset;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .card .card-image .image {
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
