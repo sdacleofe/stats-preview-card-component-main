@@ -91,7 +91,7 @@ main {
             flex: 1;
 
             .image {
-                background-image: url('/images/image-header-desktop.jpg');
+                background-image: url('/stats-preview-card-component-main/images/image-header-desktop.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;   
                 height: 445px;
@@ -106,7 +106,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 0;
 
     span {
         color: #f5a7e4;

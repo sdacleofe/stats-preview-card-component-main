@@ -32,10 +32,7 @@ Mobile Preview
 
 ### Links
 
-Links will be updated after the site is live and frontend solution is submitted
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Stats Preview Card Layout](https://sdacleofe.github.io/stats-preview-card-component-main/)
 
 ## My process
 
