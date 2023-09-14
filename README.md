@@ -24,14 +24,17 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop Preview
+## Desktop Preview
+
 ![](./design/desktop-preview-f.png)
 
-Mobile Preview
+## Mobile Preview
+
 ![](./design/mobile-preview-f.png)
 
 ### Links
 
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-8nFAwTF7vN)
 - Live Site URL: [Stats Preview Card Layout](https://sdacleofe.github.io/stats-preview-card-component-main/)
 
 ## My process
