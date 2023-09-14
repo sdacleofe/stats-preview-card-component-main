@@ -114,7 +114,7 @@ footer span a {
   color: #f5a7e4;
 }
 
-@media (width >=700px) {
+@media (width <=700px) {
   main .card {
     flex-direction: column-reverse;
     align-items: unset;
